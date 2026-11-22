@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="100%" height="100%">
+    <defs>
+        <linearGradient id="top-surface-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="100%" stop-color="#EBF2F7" />
+        </linearGradient>
+
+        <linearGradient id="rim-light" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#CBD7E3" />
+            <stop offset="50%" stop-color="#E2EBF2" />
+            <stop offset="100%" stop-color="#B8C7D6" />
+        </linearGradient>
+
+        <linearGradient id="rock-left" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#DCE5EE" />
+            <stop offset="100%" stop-color="#B0C0D0" />
+        </linearGradient>
+
+        <linearGradient id="rock-center" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#C3D1DF" />
+            <stop offset="100%" stop-color="#8FA3B8" />
+        </linearGradient>
+
+        <linearGradient id="rock-right" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#A6B7C9" />
+            <stop offset="100%" stop-color="#768B9E" />
+        </linearGradient>
+    </defs>
+
+    <g id="island-underside">
+
+        <polygon points="160,155 340,185 280,310" fill="url(#rock-left)" />
+        <polygon points="280,310 340,185 450,360" fill="#B6C6D6" />
+
+        <polygon points="340,185 560,205 450,360" fill="url(#rock-center)" />
+        <polygon points="450,360 560,205 680,490" fill="#9BB0C4" />
+
+        <polygon points="560,205 840,205 680,490" fill="url(#rock-center)" />
+        <polygon points="680,490 840,205 710,555" fill="#7D93A8" />
+        <polygon points="450,360 680,490 590,465" fill="#8A9FB4" />
+
+        <polygon points="840,205 1060,185 930,375" fill="#95AAC0" />
+        <polygon points="840,205 930,375 710,555" fill="url(#rock-right)" />
+
+        <polygon points="1060,185 1240,155 1110,305" fill="#889DB2" />
+        <polygon points="1060,185 1110,305 930,375" fill="#74899E" />
+
+        <polyline points="340,185 450,360 680,490 930,375 1060,185" fill="none" stroke="#64798E" stroke-width="1.5"
+            stroke-opacity="0.45" />
+        <line x1="560" y1="205" x2="680" y2="490" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.4" />
+        <line x1="840" y1="205" x2="710" y2="555" stroke="#526578" stroke-width="1.5" stroke-opacity="0.4" />
+    </g>
+
+    <g id="island-rim">
+        <polygon points="140,140 330,175 700,192 1070,175 1260,140 1240,158 1060,188 700,206 340,188 160,158"
+            fill="url(#rim-light)" />
+
+        <polyline points="220,162 340,183 700,199 1060,183 1180,162" fill="none" stroke="#2B333E" stroke-width="3"
+            stroke-linecap="round" />
+
+        <circle cx="340" cy="183" r="3.5" fill="#2B333E" />
+        <circle cx="700" cy="199" r="4" fill="#5CA8E6" />
+        <circle cx="1060" cy="183" r="3.5" fill="#2B333E" />
+    </g>
+
+    <g id="island-top-surface">
+        <polygon points="140,140 360,102 1040,102 1260,140 1070,175 700,192 330,175" fill="url(#top-surface-grad)" />
+
+        <polygon points="260,136 410,112 990,112 1140,136 980,160 700,172 420,160" fill="none" stroke="#D5E1EC"
+            stroke-width="1.5" />
+    </g>
+</svg>

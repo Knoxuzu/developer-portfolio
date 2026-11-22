@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <title>Distant Floating Islands</title>
+    <desc>Background silhouettes of floating islands providing atmospheric depth behind the KNOXUZU main island.</desc>
+    <defs>
+        <linearGradient id="distant-top-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F2F8FD" />
+            <stop offset="100%" stop-color="#DCEAF6" />
+        </linearGradient>
+
+        <linearGradient id="distant-rock-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C9DCEF" />
+            <stop offset="100%" stop-color="#A8C2DC" />
+        </linearGradient>
+    </defs>
+
+    <g id="distant-island-left" opacity="0.72">
+        <polygon points="180,360 340,375 265,455" fill="url(#distant-rock-grad)" />
+        <polygon points="265,455 340,375 315,495" fill="#B5CEE6" />
+        <polygon points="170,352 255,338 350,368 255,378" fill="url(#distant-top-grad)" />
+    </g>
+
+    <g id="distant-island-right-high" opacity="0.65">
+        <polygon points="1540,280 1710,295 1625,365" fill="url(#distant-rock-grad)" />
+        <polygon points="1530,273 1620,260 1720,288 1625,297" fill="url(#distant-top-grad)" />
+    </g>
+
+    <g id="distant-island-right-low" opacity="0.8">
+        <polygon points="1410,540 1620,558 1525,665" fill="url(#distant-rock-grad)" />
+        <polygon points="1525,665 1620,558 1585,710" fill="#A5C0DA" />
+        <polygon points="1398,530 1510,512 1632,548 1515,562" fill="url(#distant-top-grad)" />
+        <line x1="1430" y1="546" x2="1600" y2="555" stroke="#7DD3FC" stroke-width="1.5" stroke-opacity="0.65" />
+    </g>
+</svg>

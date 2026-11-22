@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <title>Ambient Floating Particles</title>
+    <desc>Subtle geometric particles and soft icy-blue glints floating through the sky.</desc>
+
+    <g id="ambient-particles">
+
+        <circle id="particle-orb-1" cx="72" cy="84" r="4.5" fill="#7DD3FC" opacity="0.65" />
+        <circle id="particle-orb-2" cx="318" cy="112" r="3.5" fill="#BAE6FD" opacity="0.8" />
+        <circle id="particle-orb-3" cx="246" cy="296" r="5" fill="#7DD3FC" opacity="0.45" />
+        <circle id="particle-orb-4" cx="118" cy="332" r="2.5" fill="#2B333E" opacity="0.25" />
+
+        <polygon id="particle-diamond-1" points="184,56 190,64 184,72 178,64" fill="#FFFFFF" stroke="#7DD3FC"
+            stroke-width="1.2" opacity="0.85" />
+        <polygon id="particle-diamond-2" points="342,238 347,245 342,252 337,245" fill="#BAE6FD" opacity="0.75" />
+        <polygon id="particle-diamond-3" points="64,218 68,223 64,228 60,223" fill="#2B333E" opacity="0.3" />
+
+        <polygon id="particle-hex-1" points="284,182 290,185.5 290,192.5 284,196 278,192.5 278,185.5" fill="none"
+            stroke="#7DD3FC" stroke-width="1.2" opacity="0.7" />
+        <polygon id="particle-hex-2" points="154,168 158,170.5 158,175.5 154,178 150,175.5 150,170.5" fill="#FFFFFF"
+            opacity="0.75" />
+    </g>
+</svg>

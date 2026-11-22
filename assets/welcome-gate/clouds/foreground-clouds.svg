@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+    <title>Foreground Clouds</title>
+    <desc>Soft foreground cloud banks framing the lower edge of the floating island scene.</desc>
+    <defs>
+        <linearGradient id="fg-cloud-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="65%" stop-color="#F3F9FE" />
+            <stop offset="100%" stop-color="#DCECF9" />
+        </linearGradient>
+
+        <linearGradient id="fg-cloud-rim" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.45" />
+            <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.45" />
+        </linearGradient>
+    </defs>
+
+    <g id="foreground-clouds-group">
+
+        <path id="fg-cloud-left"
+            d="M -20 300 L -20 215 Q 15 180 58 192 Q 86 156 135 166 Q 178 148 215 182 Q 255 185 270 225 Q 305 235 315 275 L 315 300 Z"
+            fill="url(#fg-cloud-grad)" />
+        <path d="M 58 192 Q 86 156 135 166 Q 178 148 215 182" fill="none" stroke="url(#fg-cloud-rim)"
+            stroke-width="3" />
+
+        <path id="fg-cloud-right"
+            d="M 295 300 L 305 268 Q 332 232 375 235 Q 405 192 455 198 Q 498 172 542 200 Q 582 195 620 230 L 620 300 Z"
+            fill="url(#fg-cloud-grad)" />
+        <path d="M 375 235 Q 405 192 455 198 Q 498 172 542 200" fill="none" stroke="url(#fg-cloud-rim)"
+            stroke-width="3" />
+    </g>
+</svg>

@@ -1,0 +1,58 @@
+/* General styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8ff;
+  color: #263449;
+  line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+  background-color: white;
+  padding: 20px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #263449;
+}
+
+/* Main sections */
+
+section {
+  padding: 80px 8%;
+}
+
+#home {
+  background-color: #e7efff;
+  min-height: 400px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #263449;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

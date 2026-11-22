@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+    <defs>
+        <linearGradient id="frame-face" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="50%" stop-color="#E8EFF5" />
+            <stop offset="100%" stop-color="#CBD7E3" />
+        </linearGradient>
+
+        <linearGradient id="frame-bevel-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#9EB0C2" />
+            <stop offset="100%" stop-color="#6F8296" />
+        </linearGradient>
+
+        <linearGradient id="charcoal-core" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#36404E" />
+            <stop offset="100%" stop-color="#1F252E" />
+        </linearGradient>
+    </defs>
+
+    <g id="portal-frame">
+
+        <polygon points="190,820 610,820 640,855 160,855" fill="#CBD7E3" />
+        <polygon points="220,795 580,795 610,820 190,820" fill="#E8EFF5" />
+        <rect x="250" y="812" width="300" height="6" rx="2" fill="#2B333E" />
+
+        <polygon points="400,60 715,242 715,606 400,788 85,606 85,242" fill="url(#frame-bevel-dark)" />
+
+        <polygon points="400,72 702,246 702,596 400,770 98,596 98,246" fill="url(#frame-face)" />
+
+        <polygon points="400,112 666,266 666,574 400,728 134,574 134,266" fill="url(#charcoal-core)" />
+
+        <polygon points="400,126 654,273 654,567 400,714 146,567 146,273" fill="#DDE6EF" />
+
+        <g id="frame-detail-lines" stroke="#2B333E" stroke-width="2" fill="none">
+
+            <polyline points="370,72 385,96 415,96 430,72" fill="#2B333E" />
+            <polyline points="370,770 385,746 415,746 430,770" fill="#2B333E" />
+
+            <line x1="98" y1="421" x2="134" y2="421" stroke-width="3" />
+            <line x1="666" y1="421" x2="702" y2="421" stroke-width="3" />
+        </g>
+
+        <polygon points="112,350 120,355 120,487 112,492" fill="#7CC4FA" />
+        <polygon points="688,350 680,355 680,487 688,492" fill="#7CC4FA" />
+    </g>
+</svg>
