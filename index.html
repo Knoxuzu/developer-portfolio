@@ -3,53 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FAFAFA" />
 
-    <title>Portfolio Space</title>
+    <title>KNOXUZU — Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Explore the creative developer world of KNOXUZU."
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <h1>My Portfolio Space</h1>
 
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#welcome" aria-label="KNOXUZU home">
+        <img
+          src="assets/branding/Dev-Watermark.svg"
+          alt=""
+          class="brand-mark"
+        />
+        <span>KNOXUZU</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#welcome">Home</a>
+        <a href="#world">Explore</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section id="home">
-        <h2>Hello, I'm a Developer!</h2>
-        <p>Welcome to my personal portfolio.</p>
+      <section class="welcome-gate" id="welcome">
+        <!-- Background layers -->
+        <div class="scene-background" aria-hidden="true">
+          <img src="assets/welcome-gate/background/sky-background.svg" alt="" />
+          <img
+            src="assets/welcome-gate/background/distant-islands.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- Environment -->
+        <div class="scene-clouds" aria-hidden="true">
+          <img src="assets/welcome-gate/clouds/cloud-clusters.svg" alt="" />
+        </div>
+
+        <div class="scene-island" aria-hidden="true">
+          <img src="assets/welcome-gate/island/island-shadow.svg" alt="" />
+          <img src="assets/welcome-gate/island/main-island.svg" alt="" />
+        </div>
+
+        <!-- Gateway -->
+        <div class="scene-gateway" aria-hidden="true">
+          <img src="assets/welcome-gate/gateway/gateway-shadow.svg" alt="" />
+          <img
+            src="assets/welcome-gate/gateway/gateway-outer-frame.svg"
+            alt=""
+          />
+          <img src="assets/welcome-gate/gateway/gateway-interior.svg" alt="" />
+          <img
+            src="assets/welcome-gate/gateway/gateway-inner-ring.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- Decorative particles -->
+        <div class="scene-particles" aria-hidden="true">
+          <img
+            src="assets/welcome-gate/decorations/ambient-particles.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- Welcome content -->
+        <div class="welcome-content">
+          <img
+            src="assets/branding/Dev-Badge.svg"
+            alt="KNOXUZU developer brand"
+            class="welcome-logo"
+          />
+
+          <p class="welcome-label">WELCOME TO MY WORLD</p>
+
+          <h1>
+            Ideas become reality.
+            <span>One project at a time.</span>
+          </h1>
+
+          <p class="welcome-description">
+            I'm Noreen Cendana, an aspiring web developer exploring technology,
+            design, and creative problem-solving.
+          </p>
+
+          <div class="welcome-actions">
+            <a href="#world" class="button button-primary">
+              Explore the World
+            </a>
+
+            <a href="#projects" class="button button-secondary">
+              View My Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">SCROLL TO DISCOVER</div>
+
+        <div class="foreground-clouds" aria-hidden="true">
+          <img src="assets/welcome-gate/clouds/foreground-clouds.svg" alt="" />
+        </div>
       </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Knoxuzu, an aspiring web developer. For now, I am still working on my web developing skills and hope to pursue on creating more websites that would be eye catching to the internet.</p>
-        <h3>Acquired Skills</h3>
-        <p>- Obtained Java Certificate (November 8, 2025)</p>
-        <p>- Obtained Python Certificate (July 15, 2025)</p>
-        <p>- Creator of "What Screen Again?" (https://knoxuzu.github.io/what-screen-again/)</p>
+      <!-- Future destinations -->
+      <section id="world">
+        <h2>Explore the KNOXUZU World</h2>
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
-        <p>My projects will appear here.</p>
+        <h2>My Creations</h2>
       </section>
 
       <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me through my contact links.</p>
+        <h2>Message Station</h2>
       </section>
     </main>
 
     <footer>
-      <p>Copyright © 2026 My Portfolio</p>
+      <p>© 2026 KNOXUZU. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

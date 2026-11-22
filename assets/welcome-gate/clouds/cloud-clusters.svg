@@ -3,9 +3,9 @@
     <desc>Stylized layered cloud formations drifting around the floating island and gateway.</desc>
     <defs>
         <linearGradient id="cluster-cloud-body" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#FFFFFF" />
-            <stop offset="75%" stop-color="#EFF6FC" />
-            <stop offset="100%" stop-color="#D7E7F5" />
+            <stop offset="0%" stop-color="#F8FCFF" />
+            <stop offset="75%" stop-color="#DCEAF6" />
+            <stop offset="100%" stop-color="#C5DCEE" />
         </linearGradient>
 
         <linearGradient id="cluster-cloud-shade" x1="0%" y1="0%" x2="100%" y2="100%">

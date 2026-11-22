@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 0 660 300" width="100%" height="100%">
     <title>Foreground Clouds</title>
     <desc>Soft foreground cloud banks framing the lower edge of the floating island scene.</desc>
     <defs>
         <linearGradient id="fg-cloud-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#FFFFFF" />
-            <stop offset="65%" stop-color="#F3F9FE" />
-            <stop offset="100%" stop-color="#DCECF9" />
+            <stop offset="0%" stop-color="#F8FCFF" />
+            <stop offset="65%" stop-color="#E4F0F9" />
+            <stop offset="100%" stop-color="#C7DDED" />
         </linearGradient>
 
         <linearGradient id="fg-cloud-rim" x1="0%" y1="0%" x2="100%" y2="0%">
