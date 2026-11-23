@@ -70,7 +70,7 @@
   // Reveal on scroll (staggered)
   $$(".reveal").forEach((el, i) => el.style.setProperty("--d", (i % 4) * 90 + "ms"));
   const io = new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    if (e.isIntersecting) { e.target.classList.add("in"); setTimeout(() => e.target.classList.add("done"), 1000); io.unobserve(e.target); }
   }), { threshold: 0.15 });
   $$(".reveal").forEach(el => io.observe(el));
 
@@ -112,5 +112,6 @@
     const d = new FormData(form);
     location.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Portfolio message from " + d.get("name"))}&body=${encodeURIComponent(d.get("message") + "\n\n— " + d.get("name") + " (" + d.get("email") + ")")}`;
     status.textContent = "Opening your email app…";
+    document.dispatchEvent(new Event("sent"));
   });
 })();
