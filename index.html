@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FAFAFA" />
+    <meta property="og:title" content="KNOXUZU — Developer Portfolio" />
+    <meta property="og:description" content="Ideas become reality. One project at a time." />
+    <meta property="og:type" content="website" />
+    <script>document.documentElement.classList.add("js");</script>
 
     <title>KNOXUZU — Developer Portfolio</title>
     <meta
@@ -11,21 +15,23 @@
       content="Explore the creative developer world of KNOXUZU."
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/branding/Dev-Watermark.svg">
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="#welcome" aria-label="KNOXUZU home">
-        <img
-          src="assets/branding/Dev-Watermark.svg"
-          alt=""
-          class="brand-mark"
-        />
+        <img src="assets/branding/Dev-Watermark.svg" alt="" class="brand-mark" />
         <span>KNOXUZU</span>
       </a>
-
-      <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu"><span></span><span></span></button>
+      <nav id="nav" aria-label="Main navigation">
         <a href="#welcome">Home</a>
         <a href="#world">Explore</a>
         <a href="#projects">Projects</a>
@@ -33,7 +39,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section class="welcome-gate" id="welcome">
         <!-- Background layers -->
         <div class="scene-background" aria-hidden="true">
@@ -78,11 +84,7 @@
 
         <!-- Welcome content -->
         <div class="welcome-content">
-          <img
-            src="assets/branding/Dev-Badge.svg"
-            alt="KNOXUZU developer brand"
-            class="welcome-logo"
-          />
+          
 
           <p class="welcome-label">WELCOME TO MY WORLD</p>
 
@@ -107,29 +109,64 @@
           </div>
         </div>
 
-        <div class="scroll-indicator">SCROLL TO DISCOVER</div>
+        <a class="scroll-indicator" href="#world">SCROLL TO DISCOVER</a>
 
         <div class="foreground-clouds" aria-hidden="true">
           <img src="assets/welcome-gate/clouds/foreground-clouds.svg" alt="" />
         </div>
       </section>
 
-      <!-- Future destinations -->
-      <section id="world">
-        <h2>Explore the KNOXUZU World</h2>
+      <section id="world" aria-labelledby="world-title">
+        <div class="container">
+          <p class="eyebrow reveal">01 — Explore</p>
+          <h2 id="world-title" class="reveal">Explore the KNOXUZU World</h2>
+          <p class="lead reveal">
+            I'm Noreen, a web developer in the Philippines who loves turning
+            ideas into clean, usable, good-looking things. <!-- EDIT: your story -->
+          </p>
+          <div class="cards">
+            <article class="card reveal"><span class="card-icon">&lt;/&gt;</span><h3>Build</h3><p>Semantic HTML, modern CSS and JavaScript, built to be fast and accessible.</p></article>
+            <article class="card reveal"><span class="card-icon">✦</span><h3>Design</h3><p>Layouts, motion and detail that feel intentional rather than templated.</p></article>
+            <article class="card reveal"><span class="card-icon">↗</span><h3>Grow</h3><p>Always learning: every project teaches me something I carry into the next.</p></article>
+          </div>
+          <ul class="skills reveal" aria-label="Skills"></ul>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>My Creations</h2>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="eyebrow reveal">02 — Projects</p>
+          <h2 id="projects-title" class="reveal">My Creations</h2>
+          <div class="filters reveal" role="group" aria-label="Filter projects"></div>
+          <div class="project-grid" aria-live="polite"></div>
+        </div>
       </section>
 
-      <section id="contact">
-        <h2>Message Station</h2>
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-intro">
+            <p class="eyebrow reveal">03 — Contact</p>
+            <h2 id="contact-title" class="reveal">Message Station</h2>
+            <p class="lead reveal">Have an idea, an opportunity, or just want to say hi? I'd love to hear from you.</p>
+            <div class="contact-links reveal">
+              <button type="button" class="copy-email"><span class="email-text"></span><span class="copy-label">Copy</span></button>
+              <div class="socials"></div>
+            </div>
+          </div>
+          <form class="contact-form reveal" novalidate>
+            <label>Name<input name="name" type="text" autocomplete="name" required /><small class="error"></small></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required /><small class="error"></small></label>
+            <label>Message<textarea name="message" rows="5" required minlength="10"></textarea><small class="error"></small></label>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 KNOXUZU. All rights reserved.</p>
+      <p>© <span id="year">2026</span> KNOXUZU. All rights reserved.</p>
+      <a href="#welcome" class="to-top">Back to top ↑</a>
     </footer>
 
     <script src="script.js"></script>
